@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/SheikBazith/animated-portfolio.git/static/css/main.9f694977.css",
+    "main.js": "/SheikBazith/animated-portfolio.git/static/js/main.92786ada.js",
+    "static/js/453.2865e994.chunk.js": "/SheikBazith/animated-portfolio.git/static/js/453.2865e994.chunk.js",
+    "static/media/fonnts.com-Madera_Regular.ttf": "/SheikBazith/animated-portfolio.git/static/media/fonnts.com-Madera_Regular.9454035c2310dbc2ba0c.ttf",
+    "static/media/now light.otf": "/SheikBazith/animated-portfolio.git/static/media/now light.47ed3ee1caf4c22e0015.otf",
+    "static/media/fonnts.com-Madera_W01_Thin.ttf": "/SheikBazith/animated-portfolio.git/static/media/fonnts.com-Madera_W01_Thin.885a366bc8b199b831e0.ttf",
+    "static/media/fonnts.com-Madera_W01_Bold.ttf": "/SheikBazith/animated-portfolio.git/static/media/fonnts.com-Madera_W01_Bold.284c900964707302237f.ttf",
+    "static/media/logo.svg": "/SheikBazith/animated-portfolio.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/SheikBazith/animated-portfolio.git/index.html",
+    "main.9f694977.css.map": "/SheikBazith/animated-portfolio.git/static/css/main.9f694977.css.map",
+    "main.92786ada.js.map": "/SheikBazith/animated-portfolio.git/static/js/main.92786ada.js.map",
+    "453.2865e994.chunk.js.map": "/SheikBazith/animated-portfolio.git/static/js/453.2865e994.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f694977.css",
+    "static/js/main.92786ada.js"
+  ]
+}
