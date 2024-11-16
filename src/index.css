@@ -1,0 +1,337 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {    font-family: Now-Light; src: url('./fonts/now\ light.otf') format("truetype");}
+@font-face {    font-family: Madera-Regular; src: url('./fonts/fonnts.com-Madera_Regular.ttf') format("truetype");}
+@font-face {    font-family: Madera-Bold; src: url('./fonts/fonnts.com-Madera_W01_Bold.ttf') format("truetype");}
+@font-face {    font-family: Madera-Thin; src: url('./fonts/fonnts.com-Madera_W01_Thin.ttf') format("truetype");}
+
+:root {
+  --cards: 3;
+	--cardHeight: 60vh;
+	--cardTopPadding: 0.75zem;
+	--cardMargin: 2vw;
+}
+
+body {
+  background-color: #f1eee9;
+  --accent: var(--white);
+}
+
+
+.nav-bar, .home, .tools, .about, .contact{
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+p{
+  font-family: 'Madera-Thin';
+  font-weight: bold;
+}
+
+
+
+#nav-logo{
+  font-family: 'Now-Light';
+  font-weight: bolder;
+}
+
+.sub-head{
+  font-family: 'Now-Light';
+  color: #6e6e6e;
+}
+
+
+.skill-container{
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+#skill-cards {
+  list-style: none;
+	padding-left: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--cards), var(--cardHeight));
+	gap: var(--cardMargin);
+	padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+	margin-bottom: var(--cardMargin);
+}
+
+#skill1{
+  --index: 1;
+}
+
+#skill2{
+  --index: 2;
+}
+
+#skill3{
+  --index: 3;
+}
+
+
+.skill{
+  position: sticky;
+  top: 0;
+  padding-top: calc(var(--index) * var(--cardTopPadding));
+}
+
+#skill1 .skill-body{
+  background-color: #d1d1ec;
+  color: #631d33;
+}
+
+#skill2 .skill-body{
+  background-color: #1b694c;
+  color: #bddab7;
+}
+
+#skill3 .skill-body{
+  background-color: #ddcc61;
+  color: #593f5e;
+}
+
+.skill-body {
+  box-sizing: border-box;
+	padding: 30px;
+	border-radius: 50px;
+	box-shadow: 0 0 30px 0 rgba(0,0,0,0.3);
+	height: var(--cardHeight);
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+	transition: all 0.5s;
+  width: 500px;
+  height: 300px;
+}
+
+h2{
+  font-size: 2.5em;
+}
+
+
+
+.slider{
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 10% 90%,
+    transparent
+  );
+}
+
+.slider .list{
+  display: flex;
+  width: 100%;
+  min-width: calc(100px * 9);
+  position: relative;
+}
+
+.slider .list .item {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  left: 100%;
+  animation: autoRun 20s linear infinite;
+  animation-delay: calc((20s / 9 ) * (var(--position))); 
+}
+
+.slider .list .item img {
+  width: 100%;
+}
+
+@keyframes autoRun {
+  from{
+    left: 100%;
+  }
+  to{
+    left: calc((100px * -1));
+  }
+}
+
+.slider:hover .item{
+  animation-play-state: paused!important;
+  cursor: pointer;
+}
+
+.project-container:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.project-container img{
+  transition: transform 1s ease;
+}
+
+.project-container:hover img{
+  transform: scale(1.3);
+}
+
+.project-grid{
+  transition: opacity 1s;
+}
+
+.project-grid:hover{
+  opacity: 0.9;
+}
+
+form h2{
+  font-size: 20px;
+  text-align: center;
+}
+
+form .input-box {
+  margin-top: 20px;
+}
+
+.input-box .field {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 2px solid #ddd;
+  outline: none;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 16px;
+  color: #333;
+  margin-top: 8px;
+}
+
+.input-box .field.msg {
+  height: 200px;
+  resize: none;
+}
+
+
+form button {
+  width: 100%;
+  height: 55px;
+  background: black;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 25px;
+  transition: .5s;
+}
+
+form button:hover {
+  background: #f95a43;
+}
+
+.card {
+  width: 300px;
+  height: 200px;
+  transition: all 0.4s ease;
+  border: solid 1px #f95a43;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+  background-color: rgba(241, 240, 240, 0.961);
+}
+
+.skill-p {
+  font-weight: normal;
+}
+
+.card:hover {
+  border-radius: 15px;
+  cursor: pointer;
+  transform: scale(1.05) ease;
+  background: #f95a43;
+}
+
+.first-content {
+  height: 100%;
+  width: 100%;
+  transition: all 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.card:hover .first-content {
+  height: 40%;
+  color: white;
+}
+
+.second-content {
+  height: 0%;
+  width: 100%;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+.card:hover .second-content {
+  opacity: 1;
+  height: 40%;
+}
+
+@keyframes about-animation {
+  from {
+    opacity: 0;
+    transform: translateY(200px) scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
+}
+
+
+.about-text, .skill-animation {
+  animation: about-animation linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+
+}
+
+@keyframes card-animation {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.card1 {
+  animation: card-animation linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.card2 {
+  animation: card-animation linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 25%;
+}
+
+.card3 {
+  animation: card-animation linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+
+
+
