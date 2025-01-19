@@ -6,7 +6,7 @@ export default function Project(props) {
   
   return (
     <motion.div
-     className='skill-animation project-container flex flex-col items-center justify-center w-[310px] rounded-lg overflow-hidden'>
+     className='skill-animation project-container flex flex-col items-center justify-center w-[310px] mb-6 rounded-lg overflow-hidden'>
     <img className='rounded-lg' src={props.img}/>
     <div className='project-grid flex flex-col justify-center items-center p-6 gap-3 text-center absolute opacity-0 bg-black text-white w-[310px] h-[240px] rounded-lg cursor-pointer'>
       <h3>{props.name}</h3>
