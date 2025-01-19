@@ -41,7 +41,7 @@ const project_list = [
         class: "card5",
         name: "Pokedex",
         imgURL:
-          "images/projects/pokdex.png",
+          "images/projects/pokedex.png",
         desc: "Know about your Pokemon.",
         webLink: "https://pokemon-shkbaz-q5oe4jllb-sheikbaziths-projects.vercel.app/",
       },
