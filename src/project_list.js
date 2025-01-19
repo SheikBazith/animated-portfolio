@@ -27,6 +27,24 @@ const project_list = [
         desc: "A simple responsive landing page. Template taken from figma.",
         webLink: "https://nexcent-landing-pi.vercel.app/",
       },
+      {
+        id:4,
+        class: "card4",
+        name: "Pawsitivity",
+        imgURL:
+          "images/projects/pawsitivity.png",
+        desc: "Looking for adopting a dog or a cat for yourself? Check us out.",
+        webLink: "https://pawisitivity-cqs8-4sq93j9km-sheikbaziths-projects.vercel.app/",
+      },
+      {
+        id:4,
+        class: "card5",
+        name: "Pokedex",
+        imgURL:
+          "images/projects/pokdex.png",
+        desc: "Know about your Pokemon.",
+        webLink: "https://pokemon-shkbaz-q5oe4jllb-sheikbaziths-projects.vercel.app/",
+      },
   ];
   
   export default project_list;
